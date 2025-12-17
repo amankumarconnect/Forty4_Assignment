@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  --color-accent-50: #e5ffeb;
+  --color-accent-100: #ccffd7;
+  --color-accent-200: #99ffaf;
+  --color-accent-300: #66ff87;
+  --color-accent-400: #33ff5f;
+  --color-accent-500: #00ff37;
+  --color-accent-600: #00cc2c;
+  --color-accent-700: #009921;
+  --color-accent-800: #006616;
+  --color-accent-900: #00330b;
+  --color-accent-950: #002408;
+}
