@@ -35,6 +35,16 @@ export const AppProvider = ({ children }) => {
     }
   };
 
+  const updateUser = async (id, userData) => {
+    try {
+      const { data } = await axios.put(`/api/users/${id}`, userData);
+      setUsers((prev) => prev.map((user) => (user._id === id ? data : user)));
+      return data;
+    } catch (error) {
+      console.error(`Error updating user ${id}:`, error);
+    }
+  };
+
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -46,6 +56,7 @@ export const AppProvider = ({ children }) => {
         fetchUsers,
         getUserById,
         createUser,
+        updateUser,
       }}
     >
       {children}
