@@ -2,10 +2,10 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className=" flex justify-between items-center p-4">
+    <div className=" flex justify-between items-center p-8">
       <div className="flex flex-col gap-1">
         <h1 className="font-bold text-3xl text-accent-50">User Management Dashboard</h1>
-        <p className="text-accent-200 font-medium">
+        <p className="text-accent-600 font-bold">
           View, edit and manage user access across the platform.
         </p>
       </div>
