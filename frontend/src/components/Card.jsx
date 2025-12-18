@@ -10,7 +10,7 @@ const Card = ({ cardTitle, cardImage, cardData, cardChange }) => {
       <div className="text-accent-50 text-2xl font-bold">{cardData}</div>
       <div className="text-accent-700 mt-2 flex items-center gap-1">
         <span className={cardChange > 0 ? "text-accent-500 font-medium" : "text-red-500 font-medium"}>
-          {cardChange >= 0 ? "↑+" : "↓-"}
+          {cardChange >= 0 ? "↑+" : "↓"}
           {cardChange}%{" "}
         </span>
         vs last month
