@@ -9,8 +9,8 @@ const UsersTable = () => {
 
   return (
     <div className="overflow-x-auto p-4">
-      <table className="min-w-full bg-accent-950 text-accent-50 rounded-lg overflow-hidden shadow-lg">
-        <thead className="bg-accent-900 text-accent-200 uppercase text-sm leading-normal">
+      <table className="min-w-full bg-twilight-indigo-800 text-prussian-blue-50 rounded-lg overflow-hidden shadow-lg">
+        <thead className="bg-prussian-blue-900 text-smart-blue-600 uppercase text-sm leading-normal">
           <tr>
             <th className="py-3 px-6 text-left">Name</th>
             <th className="py-3 px-6 text-left">Email</th>
@@ -22,7 +22,7 @@ const UsersTable = () => {
           {users.map((user) => (
             <tr
               key={user._id}
-              className="border-b border-accent-800 hover:bg-accent-900 transition-colors duration-200"
+              className="border-b border-prussian-blue-800 hover:bg-smart-blue-600 transition-colors duration-200"
             >
               <td className="py-3 px-6 text-left whitespace-nowrap">
                 <div className="font-medium">{user.name}</div>
@@ -44,7 +44,7 @@ const UsersTable = () => {
           ))}
           {users.length === 0 && (
             <tr>
-              <td colSpan="4" className="py-6 text-center text-accent-300">
+              <td colSpan="4" className="py-6 text-center text-prussian-blue-900">
                 No users found
               </td>
             </tr>

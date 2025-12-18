@@ -24,10 +24,10 @@ const ViewUser = () => {
   }
 
   return (
-    <div className="flex flex-col justify-center items-stretch w-fit rounded-xl overflow-hidden">
+    <div className="flex flex-col lg:flex-row justify-center items-stretch w-fit rounded-xl overflow-hidden">
       <div className="flex flex-col items-center justify-center bg-prussian-blue-900 text-twilight-indigo-300 p-4">
         <FaUserTie size={80} className="text-twilight-indigo-600" />
-        <h1 className="text-3xl font-bold text-smart-blue-600">
+        <h1 className="text-2xl font-bold text-smart-blue-600">
           {userData.name}
         </h1>
         <div className="flex items-center justify-center gap-1">

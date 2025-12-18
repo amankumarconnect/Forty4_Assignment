@@ -8,7 +8,7 @@ const DeleteBtn = ({ userID }) => {
   return (
     <button
       onClick={() => deleteUser(userID)}
-      className="text-red-400 cursor-pointer"
+      className="text-twilight-indigo-300 hover:text-red-400 cursor-pointer"
       title="Delete"
     >
       <MdDelete size={20} />

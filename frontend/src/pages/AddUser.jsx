@@ -47,15 +47,16 @@ const AddUser = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    createUser(formData);
+     await createUser(formData);
     setFormData(initialForm);
+    alert("User added successfully!");
   };
 
   return (
-    <div className="flex flex-col md:flex-row justify-center items-stretch">
-      <div className="flex items-center justify-center bg-prussian-blue-900 rounded">
+    <div className="flex flex-col md:flex-row justify-center items-stretch w-fit rounded-xl overflow-hidden">
+      <div className="flex items-center justify-center bg-prussian-blue-900">
         <h1 className="text-3xl font-bold text-twilight-indigo-300 p-6 lg:p-10 hover:text-smart-blue-600">
           Add New User
         </h1>
@@ -64,7 +65,7 @@ const AddUser = () => {
         <form
           action="/add-user"
           method="post"
-          className="bg-twilight-indigo-600 p-6 text-prussian-blue-900 rounded"
+          className="bg-twilight-indigo-600 p-6 text-prussian-blue-900"
           onSubmit={handleSubmit}
         >
           <div className="flex flex-col md:flex-row gap-4 mb-4">
