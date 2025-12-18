@@ -25,6 +25,16 @@ export const AppProvider = ({ children }) => {
     }
   };
 
+  const createUser = async (userData) => {
+    try {
+      const { data } = await axios.post("/api/users", userData);
+      setUsers((prev) => [...prev, data]);
+      return data;
+    } catch (error) {
+      console.error("Error creating user:", error);
+    }
+  };
+
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -35,6 +45,7 @@ export const AppProvider = ({ children }) => {
         users,
         fetchUsers,
         getUserById,
+        createUser,
       }}
     >
       {children}
