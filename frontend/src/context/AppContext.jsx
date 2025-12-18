@@ -15,6 +15,16 @@ export const AppProvider = ({ children }) => {
     }
   };
 
+  const getUserById = async (id) => {
+    try {
+      const { data } = await axios.get(`/api/users/${id}`);
+      return data;
+    } catch (error) {
+      console.error(`Error fetching user ${id}:`, error);
+      return null;
+    }
+  };
+
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -24,6 +34,7 @@ export const AppProvider = ({ children }) => {
       value={{
         users,
         fetchUsers,
+        getUserById,
       }}
     >
       {children}
