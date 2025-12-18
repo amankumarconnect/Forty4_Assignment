@@ -45,6 +45,17 @@ export const AppProvider = ({ children }) => {
     }
   };
 
+  const deleteUser = async (id) => {
+    try {
+      await axios.delete(`/api/users/${id}`);
+      setUsers((prev) => prev.filter((user) => user._id !== id));
+      return true;
+    } catch (error) {
+      console.error(`Error deleting user ${id}:`, error);
+      return false;
+    }
+  };
+
   useEffect(() => {
     fetchUsers();
   }, []);
@@ -57,6 +68,7 @@ export const AppProvider = ({ children }) => {
         getUserById,
         createUser,
         updateUser,
+        deleteUser,
       }}
     >
       {children}
