@@ -22,6 +22,39 @@ Build a full-stack web app where users can be added, viewed, edited, and deleted
 
 ![View User](images/Screenshot4.png)
 
+## Core Features
+
+### Frontend
+
+1. **Dashboard**: View a list of all users.
+2. **Add User**: Form to create a new user with validation.
+3. **View User**: Detailed view of a specific user.
+4. **Edit User**: Update existing user details.
+5. **Delete User**: Remove a user from the system.
+6. **Responsive UI**: Built with Tailwind CSS for a clean and responsive design.
+7. **Client-side Validation**: Ensures required fields and valid data formats.
+
+### Backend
+
+1. **RESTful API**:
+   - `GET /api/users`: Return all users.
+   - `GET /api/users/:id`: Return a single user by ID.
+   - `POST /api/users`: Create a new user.
+   - `PUT /api/users/:id`: Update a user's details.
+   - `DELETE /api/users/:id`: Delete a user.
+2. **Data Storage**: Stores Name, Email, Phone, Company, and Address (Street, City, Zip, Geo).
+3. **Server-side Validation**: Handles errors and validates input data.
+
+## API Endpoints
+
+| Method   | Endpoint         | Description         |
+| :------- | :--------------- | :------------------ |
+| `GET`    | `/api/users`     | Get all users       |
+| `POST`   | `/api/users`     | Create a new user   |
+| `GET`    | `/api/users/:id` | Get user by ID      |
+| `PUT`    | `/api/users/:id` | Update user details |
+| `DELETE` | `/api/users/:id` | Delete a user       |
+
 ## Setup Instructions
 
 ### Backend Setup
@@ -79,39 +112,6 @@ Build a full-stack web app where users can be added, viewed, edited, and deleted
 - **Mongoose** (ODM)
 - **Cors** (Cross-Origin Resource Sharing)
 - **Dotenv** (Environment Variables)
-
-## Core Features
-
-### Frontend
-
-1. **Dashboard**: View a list of all users.
-2. **Add User**: Form to create a new user with validation.
-3. **View User**: Detailed view of a specific user.
-4. **Edit User**: Update existing user details.
-5. **Delete User**: Remove a user from the system.
-6. **Responsive UI**: Built with Tailwind CSS for a clean and responsive design.
-7. **Client-side Validation**: Ensures required fields and valid data formats.
-
-### Backend
-
-1. **RESTful API**:
-   - `GET /api/users`: Return all users.
-   - `GET /api/users/:id`: Return a single user by ID.
-   - `POST /api/users`: Create a new user.
-   - `PUT /api/users/:id`: Update a user's details.
-   - `DELETE /api/users/:id`: Delete a user.
-2. **Data Storage**: Stores Name, Email, Phone, Company, and Address (Street, City, Zip, Geo).
-3. **Server-side Validation**: Handles errors and validates input data.
-
-## API Endpoints
-
-| Method   | Endpoint         | Description         |
-| :------- | :--------------- | :------------------ |
-| `GET`    | `/api/users`     | Get all users       |
-| `POST`   | `/api/users`     | Create a new user   |
-| `GET`    | `/api/users/:id` | Get user by ID      |
-| `PUT`    | `/api/users/:id` | Update user details |
-| `DELETE` | `/api/users/:id` | Delete a user       |
 
 ## Project Structure
 
