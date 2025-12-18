@@ -4,6 +4,24 @@
 
 Build a full-stack web app where users can be added, viewed, edited, and deleted from a dashboard. The app is built using React.js (frontend) and Node.js with Express (backend), connected to a MongoDB database.
 
+## Screenshots
+
+### Dashboard
+
+![Dashboard](images/Screenshot1.png)
+
+### Add User
+
+![Add User](images/Screenshot2.png)
+
+### Edit User
+
+![Edit User](images/Screenshot3.png)
+
+### View User
+
+![View User](images/Screenshot4.png)
+
 ## Tech Stack
 
 ### Frontend
@@ -48,11 +66,6 @@ Build a full-stack web app where users can be added, viewed, edited, and deleted
 
 ## Setup Instructions
 
-### Prerequisites
-
-- Node.js installed
-- MongoDB installed or a MongoDB Atlas connection string
-
 ### Backend Setup
 
 1. Navigate to the backend directory:
@@ -88,7 +101,7 @@ Build a full-stack web app where users can be added, viewed, edited, and deleted
    ```bash
    npm run dev
    ```
-   The application will run on `http://localhost:5173` (or the port specified by Vite).
+   The application will run on `http://localhost:5173`.
 
 ## API Endpoints
 
@@ -99,24 +112,6 @@ Build a full-stack web app where users can be added, viewed, edited, and deleted
 | `GET`    | `/api/users/:id` | Get user by ID      |
 | `PUT`    | `/api/users/:id` | Update user details |
 | `DELETE` | `/api/users/:id` | Delete a user       |
-
-## Screenshots
-
-### Dashboard
-
-![Dashboard](images/Screenshot1.png)
-
-### Add User
-
-![Add User](images/Screenshot2.png)
-
-### Edit User
-
-![Edit User](images/Screenshot3.png)
-
-### View User
-
-![View User](images/Screenshot4.png)
 
 ## Project Structure
 
