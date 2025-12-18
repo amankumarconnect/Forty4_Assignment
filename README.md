@@ -14,11 +14,11 @@ Build a full-stack web app where users can be added, viewed, edited, and deleted
 
 ![Add User](images/Screenshot2.png)
 
-### Edit User
+### View User
 
 ![Edit User](images/Screenshot3.png)
 
-### View User
+### Edit User
 
 ![View User](images/Screenshot4.png)
 
