@@ -1,16 +1,14 @@
 import React from "react";
 import Navbar from "./components/navbar.jsx";
 import Header from "./components/Header.jsx";
-import CardSection from "./components/CardSection.jsx";
 import SearchSection from "./components/SearchSection.jsx";
 import UsersSection from "./components/UsersSection.jsx";
 
 const App = () => {
   return (
-    <div className="bg-accent-950">
+    <div className="bg-accent-950 min-h-lvh">
       <Navbar />
       <Header />
-      <CardSection />
       <SearchSection />
       <UsersSection
         users={[
