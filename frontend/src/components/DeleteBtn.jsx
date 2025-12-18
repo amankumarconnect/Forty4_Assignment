@@ -1,4 +1,5 @@
-import React from "react";
+import { useContext } from "react";
+import { AppContext } from "../context/AppContext.jsx";
 import { MdDelete } from "react-icons/md";
 
 const DeleteBtn = ({ userID }) => {
@@ -7,7 +8,7 @@ const DeleteBtn = ({ userID }) => {
   return (
     <button
       onClick={() => deleteUser(userID)}
-      className="text-accent-400 hover:text-accent-200"
+      className="text-red-400 cursor-pointer"
       title="Delete"
     >
       <MdDelete size={20} />

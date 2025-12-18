@@ -1,15 +1,123 @@
 @import "tailwindcss";
 
 @theme {
-  --color-accent-50: #e5ffeb;
-  --color-accent-100: #ccffd7;
-  --color-accent-200: #99ffaf;
-  --color-accent-300: #66ff87;
-  --color-accent-400: #33ff5f;
-  --color-accent-500: #00ff37;
-  --color-accent-600: #00cc2c;
-  --color-accent-700: #009921;
-  --color-accent-800: #006616;
-  --color-accent-900: #00330b;
-  --color-accent-950: #002408;
+  --color-smart-blue-50: #e6f2fe;
+  --color-smart-blue-100: #cde5fe;
+  --color-smart-blue-200: #9bccfd;
+  --color-smart-blue-300: #69b2fc;
+  --color-smart-blue-400: #3799fb;
+  --color-smart-blue-500: #057ffa;
+  --color-smart-blue-600: #0466c8;
+  --color-smart-blue-700: #034c96;
+  --color-smart-blue-800: #023364;
+  --color-smart-blue-900: #011932;
+  --color-smart-blue-950: #011223;
+
+  --color-sapphire-50: #e6f2fe;
+  --color-sapphire-100: #cde5fe;
+  --color-sapphire-200: #9bccfd;
+  --color-sapphire-300: #69b2fc;
+  --color-sapphire-400: #3799fb;
+  --color-sapphire-500: #057ffa;
+  --color-sapphire-600: #0466c8;
+  --color-sapphire-700: #034c96;
+  --color-sapphire-800: #023364;
+  --color-sapphire-900: #011932;
+  --color-sapphire-950: #011223;
+
+  --color-regal-navy-50: #e6f2ff;
+  --color-regal-navy-100: #cde5fe;
+  --color-regal-navy-200: #9bcafd;
+  --color-regal-navy-300: #68b0fd;
+  --color-regal-navy-400: #3696fc;
+  --color-regal-navy-500: #047bfb;
+  --color-regal-navy-600: #0363c9;
+  --color-regal-navy-700: #024a97;
+  --color-regal-navy-800: #023164;
+  --color-regal-navy-900: #011932;
+  --color-regal-navy-950: #011123;
+
+  --color-prussian-blue-50: #e5f1ff;
+  --color-prussian-blue-100: #cce4ff;
+  --color-prussian-blue-200: #99c9ff;
+  --color-prussian-blue-300: #66adff;
+  --color-prussian-blue-400: #3392ff;
+  --color-prussian-blue-500: #0077ff;
+  --color-prussian-blue-600: #005fcc;
+  --color-prussian-blue-700: #004799;
+  --color-prussian-blue-800: #003066;
+  --color-prussian-blue-900: #001833;
+  --color-prussian-blue-950: #001124;
+
+  --color-prussian-blue-50: #e5eeff;
+  --color-prussian-blue-100: #ccdeff;
+  --color-prussian-blue-200: #99bdff;
+  --color-prussian-blue-300: #669cff;
+  --color-prussian-blue-400: #337aff;
+  --color-prussian-blue-500: #0059ff;
+  --color-prussian-blue-600: #0047cc;
+  --color-prussian-blue-700: #003699;
+  --color-prussian-blue-800: #002466;
+  --color-prussian-blue-900: #001233;
+  --color-prussian-blue-950: #000c24;
+
+  --color-prussian-blue-50: #e5eeff;
+  --color-prussian-blue-100: #ccdeff;
+  --color-prussian-blue-200: #99bdff;
+  --color-prussian-blue-300: #669cff;
+  --color-prussian-blue-400: #337aff;
+  --color-prussian-blue-500: #0059ff;
+  --color-prussian-blue-600: #0047cc;
+  --color-prussian-blue-700: #003699;
+  --color-prussian-blue-800: #002466;
+  --color-prussian-blue-900: #001233;
+  --color-prussian-blue-950: #000c24;
+
+  --color-twilight-indigo-50: #eff1f6;
+  --color-twilight-indigo-100: #dee3ed;
+  --color-twilight-indigo-200: #bdc7db;
+  --color-twilight-indigo-300: #9cabc9;
+  --color-twilight-indigo-400: #7b8fb7;
+  --color-twilight-indigo-500: #5b73a4;
+  --color-twilight-indigo-600: #485c84;
+  --color-twilight-indigo-700: #364563;
+  --color-twilight-indigo-800: #242e42;
+  --color-twilight-indigo-900: #121721;
+  --color-twilight-indigo-950: #0d1017;
+
+  --color-blue-slate-50: #f0f2f4;
+  --color-blue-slate-100: #e2e4e9;
+  --color-blue-slate-200: #c4c9d4;
+  --color-blue-slate-300: #a7afbe;
+  --color-blue-slate-400: #8a94a8;
+  --color-blue-slate-500: #6c7993;
+  --color-blue-slate-600: #576175;
+  --color-blue-slate-700: #414958;
+  --color-blue-slate-800: #2b303b;
+  --color-blue-slate-900: #16181d;
+  --color-blue-slate-950: #0f1115;
+
+  --color-slate-grey-50: #f1f2f4;
+  --color-slate-grey-100: #e3e4e8;
+  --color-slate-grey-200: #c6cad2;
+  --color-slate-grey-300: #aaafbb;
+  --color-slate-grey-400: #8e95a4;
+  --color-slate-grey-500: #717a8e;
+  --color-slate-grey-600: #5b6271;
+  --color-slate-grey-700: #444955;
+  --color-slate-grey-800: #2d3139;
+  --color-slate-grey-900: #17181c;
+  --color-slate-grey-950: #101114;
+
+  --color-lavender-grey-50: #f1f2f4;
+  --color-lavender-grey-100: #e3e4e8;
+  --color-lavender-grey-200: #c6cad2;
+  --color-lavender-grey-300: #aaafbb;
+  --color-lavender-grey-400: #8e94a4;
+  --color-lavender-grey-500: #71798e;
+  --color-lavender-grey-600: #5b6171;
+  --color-lavender-grey-700: #444955;
+  --color-lavender-grey-800: #2d3139;
+  --color-lavender-grey-900: #17181c;
+  --color-lavender-grey-950: #101114;
 }

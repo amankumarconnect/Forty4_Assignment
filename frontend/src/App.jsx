@@ -1,16 +1,17 @@
-import React from "react";
-import Navbar from "./components/navbar.jsx";
-import Header from "./components/Header.jsx";
-import SearchSection from "./components/SearchSection.jsx";
-import UsersTable from "./components/UsersTable.jsx";
+import { Routes, Route } from "react-router";
+import Layout from "./pages/Layout.jsx";
+import Home from "./pages/Home.jsx";
+import AddUser from "./pages/AddUser.jsx";
 
 const App = () => {
   return (
-    <div className="bg-accent-950 min-h-lvh">
-      <Navbar />
-      <Header />
-      <SearchSection />
-      <UsersTable />
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="add-user" element={<AddUser />} />
+        </Route>
+      </Routes>
     </div>
   );
 };

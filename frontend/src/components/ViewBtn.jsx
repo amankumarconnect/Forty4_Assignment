@@ -3,7 +3,7 @@ import { IoMdEye } from "react-icons/io";
 
 const ViewBtn = ({ userID }) => {
   return (
-    <button className="text-accent-400 hover:text-accent-200" title="View">
+    <button className="text-blue-400 cursor-pointer" title="View">
       <IoMdEye size={18} />
     </button>
   );
